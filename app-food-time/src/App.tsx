@@ -1,5 +1,5 @@
 import styles from "./AppMain.module.scss";
-import { Comment } from "./components/Comments";
+import { CommentForm } from "./components/CommentsForm";
 import { Header } from "./components/Header";
 import { ListComments } from "./components/ListComments";
 import { SnackList } from "./components/SnackList";
@@ -10,6 +10,7 @@ function App() {
       <Header />
       <SnackList />
       <ListComments />
+      <CommentForm />
     </div>
   );
 }
