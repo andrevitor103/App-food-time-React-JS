@@ -5,9 +5,10 @@ interface Snack {
   image: string;
   name: string;
   price: Number;
+  ingredients: string;
 }
 
-function Snack({ image, name, price }: Snack) {
+function Snack({ image, name, price, ingredients }: Snack) {
   return (
     <div className={styles.SnackWrapper}>
       <div className={styles.SnackImage}>
@@ -16,6 +17,10 @@ function Snack({ image, name, price }: Snack) {
       <div className={styles.SnackDetails}>
         <p className={styles.SnackDetailsName}>{name}</p>
         <p className={styles.SnackDetailsPrice}>{price}</p>
+      </div>
+      <div>
+        <h4>Ingredientes</h4>
+        <p>{ingredients}</p>
       </div>
       <div>
         <button onClick={() => alert("Showw")}>Adicionar ao carrinho</button>
