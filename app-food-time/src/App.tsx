@@ -1,12 +1,12 @@
 import styles from "./AppMain.module.scss";
 import { Header } from "./components/Header";
-import { Snack } from "./components/Snack";
+import { SnackList } from "./components/SnackList";
 
 function App() {
   return (
     <div style={{ backgroundColor: "#121212" }}>
       <Header />
-      <Snack />
+      <SnackList />
     </div>
   );
 }
