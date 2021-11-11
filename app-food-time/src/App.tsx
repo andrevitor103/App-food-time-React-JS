@@ -1,19 +1,19 @@
 import styles from "./AppMain.module.scss";
-import { Comment } from "./components/Comments";
+import { CommentForm } from "./components/CommentsForm";
 import { Header } from "./components/Header";
+import { ItemCar } from "./components/ItemCar";
+import { ListComments } from "./components/ListComments";
+import { ShopCar } from "./components/ShopCar";
 import { SnackList } from "./components/SnackList";
 
 function App() {
   return (
     <div style={{ backgroundColor: "#121212" }}>
       <Header />
+      <ShopCar />
       <SnackList />
-      <Comment
-        message="melhor atendimento da cidade"
-        star={4}
-        username="andrevitor103"
-        userImage="https://picsum.photos/200"
-      />
+      <ListComments />
+      <CommentForm />
     </div>
   );
 }

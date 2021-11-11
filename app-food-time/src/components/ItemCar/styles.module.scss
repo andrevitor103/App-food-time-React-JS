@@ -1,0 +1,75 @@
+.itemCarWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+
+  line-height: 26px;
+
+  width: 33.33%;
+
+  .itemCarImage {
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  }
+
+  .itemCarName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .itemCarInformations {
+    display: flex;
+    justify-content: space-evenly;
+
+    .itemCarInformationsValue {
+      font-size: 14px;
+    }
+    .itemCarInformationsValue::before {
+      content: "R$ ";
+    }
+
+    .itemCarInformationsQuant {
+      font-size: 14px;
+    }
+    .itemCarInformationsQuant::before {
+      content: "QTD.";
+    }
+  }
+
+  .itemCarActions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .itemCarActionsLess {
+      border: 0px;
+      border-radius: 10%;
+
+      background-color: #ba3200;
+      color: #fff;
+
+      width: 60px;
+      height: 20px;
+
+      margin-right: 4px;
+
+      cursor: pointer;
+    }
+    .itemCarActionsMore {
+      border: 0px;
+      border-radius: 10%;
+      color: #fff;
+      width: 60px;
+      height: 20px;
+      background-color: #0057d8;
+      cursor: pointer;
+    }
+  }
+}

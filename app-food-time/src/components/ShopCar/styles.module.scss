@@ -1,0 +1,33 @@
+.shopCarWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  margin: 40px;
+
+  .shopCarItens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .shopCarInformations {
+    display: flex;
+    flex-direction: row;
+
+    .shopCarInformationsTotal {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .shopCarInformationsValue {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .shopCarInformationsValue::before {
+      content: "R$ ";
+    }
+  }
+}
