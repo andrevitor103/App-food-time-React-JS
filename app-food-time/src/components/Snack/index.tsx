@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-interface Snack {
+export interface ISnack {
   image: string;
   name: string;
   price: Number;
   ingredients: string;
 }
 
-function Snack({ image, name, price, ingredients }: Snack) {
+function Snack({ image, name, price, ingredients }: ISnack) {
   return (
     <div className={styles.SnackWrapper}>
       <div className={styles.SnackImage}>
@@ -23,7 +23,9 @@ function Snack({ image, name, price, ingredients }: Snack) {
         <p>{ingredients}</p>
       </div>
       <div>
-        <button onClick={() => alert("Showw")}>Adicionar ao carrinho</button>
+        <button onClick={() => console.log({ image, name })}>
+          Adicionar ao carrinho
+        </button>
       </div>
     </div>
   );
