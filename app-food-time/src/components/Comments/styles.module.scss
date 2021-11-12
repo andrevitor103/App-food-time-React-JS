@@ -1,0 +1,38 @@
+.commentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+
+  .commentImage {
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 50%;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+
+  .commentInformation {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin-left: 20px;
+  }
+
+  .commentUsername {
+    font-size: 16px;
+    padding-bottom: 4px;
+  }
+  .commentUsername {
+    p::before {
+      content: "@";
+    }
+  }
+  .commentMessage {
+    font-size: 16px;
+  }
+}
