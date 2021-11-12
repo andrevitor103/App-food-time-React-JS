@@ -4,9 +4,10 @@ import styles from "./styles.module.scss";
 interface Item {
   image: string;
   name: string;
+  price: number;
 }
 
-function ItemCar({ image, name }: Item) {
+function ItemCar({ image, name, price }: Item) {
   return (
     <div className={styles.itemCarWrapper}>
       <div className={styles.itemCarImage}>
@@ -17,7 +18,7 @@ function ItemCar({ image, name }: Item) {
           <p>{name}</p>
         </div>
         <div className={styles.itemCarInformations}>
-          <p className={styles.itemCarInformationsValue}>XX,XX</p>
+          <p className={styles.itemCarInformationsValue}>{price}</p>
           <p className={styles.itemCarInformationsQuant}>1</p>
         </div>
         <div className={styles.itemCarActions}>
